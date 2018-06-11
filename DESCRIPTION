@@ -1,15 +1,12 @@
 Package: vivetracking
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Title: Extraction of JSON Data from vectorMatch Trial
+Version: 0.1.0
+Authors@R: person("Brian", "Cohn", email = "brian.cohn@usc.edu", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: 
 	R (>= 3.5.0),
-	jsonlite,
-	ggplot2,
-	reshape2,
-	plotly
-License: What license is it under?
+	jsonlite
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Suggests: testthat
