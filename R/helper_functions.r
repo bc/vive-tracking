@@ -11,10 +11,9 @@ dcrb <- function(list_of_dataframes) {
 ##' @return res dataframe that contains right_position_x, timestamp, etc.
 convert_json_to_df <- function(json_object) {
     timestamp <- unlist(json_object$timestamp)
-    print('extracting positions')
+    message('Extracting positions and rotations')
     l_position <- lapply(json_object$leftPosition, unlist) %>% dcrb
     r_position <- lapply(json_object$rightPosition, unlist) %>% dcrb
-    print('extracting eulers')
     l_euler <- lapply(json_object$leftEuler, unlist) %>% dcrb
     r_euler    <- lapply(json_object$rightEuler, unlist) %>% dcrb
 
